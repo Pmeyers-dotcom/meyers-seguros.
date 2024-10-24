@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meyers Seguros ofrece asesoría en seguros generales, incluyendo seguros de incendio y responsabilidad civil. Contáctanos para obtener la mejor asesoría personalizada." />
+    <meta name="keywords" content="seguros generales, seguros de incendio, responsabilidad civil, seguros, asesoría en seguros, seguros en Chile, Meyers Seguros" />
+    <title>Seguros Generales - Meyers Seguros</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tipografía externa (Opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo-meyers.png" alt="Meyers Seguros" class="logo-img">
+        </div>
+        <h1>Seguros Generales</h1>
+        <p>Pedro Meyers, Corredor de Seguros</p>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <img src="imagenes/foto-negocio.jpg" alt="Meyers Seguros" class="hero-img">
+        <h2>Seguros Personalizados para Ti</h2>
+        <p>Asesoría profesional en seguros generales: seguros de incendio, responsabilidad civil y más.</p>
+        <a href="#consulta" class="cta-button">Solicitar Consulta</a>
+    </section>
+
+    <!-- Servicios Actualizados -->
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <!-- Cada servicio -->
+        <!-- Revisa si las rutas de las imágenes son correctas -->
+        <div class="service-item">
+            <img src="imagenes/seguro-incendio.jpg" alt="Seguro de Incendio">
+            <h3>Seguro de Incendio</h3>
+            <p>Protege tu hogar o negocio contra incendios y daños.</p>
+        </div>
+        <!-- Añade más servicios como estos -->
+    </section>
+
+    <!-- Formulario de Consulta -->
+    <section id="consulta" class="consulta">
+        <h2>Contáctanos para Asesoría</h2>
+        <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Celular:</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej: 912345678">
+            <label for="mensaje">Consulta:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit" class="submit-btn">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="social-media">
+        <h3>Síguenos en Redes Sociales</h3>
+        <a href="https://wa.me/56985486061" class="whatsapp-btn">WhatsApp</a>
+        <a href="https://www.facebook.com" class="facebook-btn">Facebook</a>
+        <a href="https://www.instagram.com" class="instagram-btn">Instagram</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meyers Seguros. Todos los derechos reservados.</p>
+        <p>Contáctanos: <a href="tel:+56985486061" class="phone-number">+56985486061</a></p>
+        <p>Código de registro en CMF: 67777</p>
+    </footer>
+</body>
+</html>
